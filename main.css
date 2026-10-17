@@ -1,6 +1,10 @@
 body{
-background-color: #011827;
-
+background-color: white;
+font-family: 'Roboto regular', "roboto bold", "roboto italic"
+}
+header{
+    background-color: #011827;
+    padding: 20px;
 }
 .title{
     color: #FFFFFF;
@@ -8,10 +12,19 @@ background-color: #011827;
     font-size: 50px;
     text-align: center;
 }
+
+.logo{
+    background-color: #011827;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .nav{
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
 }
@@ -26,22 +39,36 @@ background-color: #011827;
     object-position: center;
 }
 .buttons{
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: -15px;
+    position: relative;
+    z-index: 5000;
 }
-.button-red{
+.button-primary  {
 
     background-color: #E3170A;
     color: #FFFFFF;
     border: none;
-    padding: 10px 40px;
-    font-size: 16px;
+    padding: 1rem 2rem;
+    font-size: 22px;
+    border-radius: 5px;
+    font-style: bold;
+    margin-bottom: 50px;
 
 }
-
+.button-secondary {
+    background-color: #8acfe5;
+    color: #011827;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 22px;
+    border-radius: 5px;
+    font-style: bold;
+    margin-bottom: 50px;
+}
 
 
 
@@ -53,10 +80,13 @@ background-color: #011827;
     text-align: center;
     display: flex;
     flex-direction: row;
+    margin: 20px;
+    
 }
 .content-img{
     border-radius: 50%;
     height: 100px;
+    float: left;
 }
 
 .star,
