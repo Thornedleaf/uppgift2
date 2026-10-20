@@ -17,16 +17,18 @@ header{
     background-color: #011827;
     padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
     gap: 10px;
 }
 .nav{
+    width: 50%;
     color: #FFFFFF;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
+
 }
 
 .header-img{
@@ -43,7 +45,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: -15px;
+    margin-top: -30px;
     position: relative;
     z-index: 5000;
 }
@@ -59,6 +61,23 @@ header{
     margin-bottom: 50px;
 
 }
+.button-primary-small  {
+
+    background-color: #E3170A;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 30px;
+    font-style: bold;
+    margin-bottom: 0px;
+    position: relative;
+    float: right;
+    
+
+}
+
+
+
 .button-secondary {
     background-color: #8acfe5;
     color: #011827;
@@ -70,6 +89,16 @@ header{
     margin-bottom: 50px;
 }
 
+.button-dark {
+    background-color: transparent;
+    color: #8acfe5;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 22px;
+    border-radius: 5px;
+    font-style: bold;
+    margin-bottom: 50px;
+}
 
 
 
@@ -104,14 +133,16 @@ img[src*="Star"] {
     flex-direction: row;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
     padding: 20px;
     background-color: white;
     color: #011827;
 }
 
 .challenge{
-    flex: 1 1 40%;
+    flex: 1 1 25%;
     max-width: 500px;
+    width: 25%;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
@@ -121,6 +152,77 @@ img[src*="Star"] {
 
 .challenge-image{
     width: 100%;
-    max-width: 350px;
     display: block;
 }
+
+.story{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color:#011827; ;
+    color: #011827;
+}
+.story-text{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.booking-left {
+    display: flex;
+    flex-direction: row;
+
+}
+.booking-right {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
+.booking-img {
+    width: 50%;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.booking-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem 5rem;
+}
+
+
+footer{
+    background-color: #011827;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.footer-content{
+    width: 50%;
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-links{
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
