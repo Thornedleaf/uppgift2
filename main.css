@@ -9,15 +9,30 @@ header{
 .title{
     color: #FFFFFF;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 24px;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.logo-top {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    width: 25%;
+    height: 100px;
+    object-fit: contain;
 }
 
 .logo{
     background-color: #011827;
     padding: 20px;
     display: flex;
-    align-items: left;
+    align-items: center;
     gap: 10px;
 }
 .nav{
@@ -95,7 +110,7 @@ header{
 .button-dark {
     background-color: transparent;
     color: #8acfe5;
-    border: none;
+    border: 2px solid #8acfe5;
     padding: 1rem 2rem;
     font-size: 22px;
     border-radius: 5px;
@@ -283,16 +298,11 @@ footer{
 
 @media (max-width: 500px) {
     .logo{
-        width: 50%;
-    }
-
-    .logo-top {
-        height: 100%;
+        width: auto;
     }
 
     .title {
-        margin: 0;
-        padding:0;
+        padding: 0;
     }
 
     .quote {
@@ -334,6 +344,27 @@ footer{
         max-width: none;
 
     } 
+
+    .button-dark {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .booking {
+    display: flex;
+    flex-direction: column;
+    }
+    .booking-left {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.booking-img{
+width: 100%;
+
+}
 
 }
 
